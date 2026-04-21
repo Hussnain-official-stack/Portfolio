@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="rating.css">
+  <title>Interactive Rating Component</title>
+</head>
+<body>
+
+  <!-- ── RATING CARD ── -->
+  <div class="card" id="rating-card">
+    <div class="star-circle">
+      <img src="images/icon-star.svg" alt="star">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+    <ul class="rating-list">
+      <li><button class="rating-btn">1</button></li>
+      <li><button class="rating-btn">2</button></li>
+      <li><button class="rating-btn">3</button></li>
+      <li><button class="rating-btn">4</button></li>
+      <li><button class="rating-btn">5</button></li>
+    </ul>
+
+    <button id="submit-btn">SUBMIT</button>
+  </div>
+         <!-- Rating Card End -->
+
+  <!-- ── THANK YOU CARD (hidden by default) ── -->
+  <div class="card card--thankyou" id="thankyou-card">
+    <img src="images/illustration-thank-you.svg" alt="Thank you illustration">
+    <p class="selected-pill">You selected <span id="selected-rating">0</span> out of 5</p>
+    <h1>Thank you!</h1>
+    <p>We appreciate you taking the time to give a rating. 
+      If you ever need more support, don't hesitate to get in touch!
+    </p>
+    <button id="rate-again-btn">Rate Again</button>
+  </div>
+          <!-- thank you card end -->
+  
+
+  <div class="attribution">
+    Coded by <a href="#">Muhammad Hussnain</a>.
+  </div>
+
+  <script src="rating.js"></script>
+</body>
+</html>

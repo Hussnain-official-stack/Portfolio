@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
+  <link rel="stylesheet" href="age.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+  
+  <!-- here we take card for age calculator to make the easy layout -->
+  <form id="ageForm" class="card">
+    <div class="input-group">
+      <div class="field">
+        <label for="Day">Day</label>
+        <input id="day" type="number" placeholder="DD" min="1" max="31">
+      </div>
+      <div class="field">
+        <label for="month">Month</label>
+        <input id="month" type="number" placeholder="MM" min="1" max="12">
+      </div>
+      <div class="field">
+        <label for="year">Year</label>
+        <input id="year" type="number" placeholder="YYYY" min="1900" max="2026">
+      </div>
+    </div>
+        <!-- submit button -->
+    <div class="divider">
+      <button type="submit" class="submit-button">
+        <img src="images/favicon-32x32.png" alt="Submit">
+      </button>
+    </div>
+
+       <!-- Here we take a div for output result. There inside the div we take a <p> tag and inside it span tag and give it a unique id.   -->
+    <div id="result">
+      <p><span id="calculatedyears">--</span> year</p>
+      <p><span id="calculatedmonth">--</span> month</p>
+      <p><span id="calculateddays">--</span> days</p>
+    </div>
+  </form>
+  
+  <div class="attribute">
+    <p>code by <a href="#">Muhammad Hussnain</a></p>
+  </div>
+
+
+
+<script src="age.js"></script>
+</body>
+</html>
